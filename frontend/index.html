@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+</head>
+<body>
+    <div id="app">
+        <h1 class="title">Code Conversion and Analysis</h1>
+        <div class="code-input">
+            <h2>Your Code:</h2>
+            <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+        </div>
+        <div class="converter">
+            <select id="language-selector">
+                <option value="select">Select Language</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+            </select>
+            <button id="convert-button" class="button">Convert Code</button>
+            <button id="debug-button" class="button">Debug Code</button>
+            <button id="quality-button" class="button">Check Code Quality</button>
+        </div>
+        <div id="output-section">
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
